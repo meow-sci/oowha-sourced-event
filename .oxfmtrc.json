@@ -1,0 +1,17 @@
+{
+  "$schema": "./node_modules/oxfmt/configuration_schema.json",
+  "singleQuote": true,
+  "semi": true,
+  "ignorePatterns": [
+    "dist/**",
+    "public/**",
+    "docs/**",
+    "plans/**",
+    "ksa-mods/**",
+    "thirdparty/**",
+    "scripts/**",
+    ".claude/**",
+    ".agents/**",
+    ".pnpm-store/**"
+  ]
+}

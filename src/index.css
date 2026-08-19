@@ -1,0 +1,62 @@
+@import 'tailwindcss' source(none);
+@plugin 'tailwindcss-react-aria-components';
+@source '../index.html';
+@source '../src';
+
+@theme {
+  --color-canvas: #0b0c0e;
+  --color-panel: #161719;
+  --color-panel-raised: #1f2125;
+  --color-panel-sunken: #0e0f11;
+  --color-border: #2a2d32;
+  --color-border-strong: #3a3e45;
+  --color-fg: #e8eaed;
+  --color-fg-muted: #9aa0a8;
+  --color-fg-subtle: #61666e;
+  --color-accent: #2cfa1f;
+  --color-accent-hover: #54fb4a;
+  --color-accent-fg: #052008;
+  --color-danger: #ef4444;
+  --color-wash-hover: rgb(255 255 255 / 0.06);
+  --shadow-popover: 0 20px 70px -12px rgb(0 0 0 / 0.75);
+  --shadow-card: 0 10px 40px -24px rgb(0 0 0 / 0.8);
+}
+
+:root {
+  color-scheme: dark;
+  font-family:
+    Inter,
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  background: var(--color-canvas);
+}
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: var(--color-canvas);
+}
+button,
+input {
+  font: inherit;
+}
+.eyebrow {
+  margin: 0;
+  color: var(--color-accent);
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+::selection {
+  background: rgb(44 250 31 / 0.25);
+}
